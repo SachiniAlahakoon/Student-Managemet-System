@@ -12,7 +12,7 @@ export const SideBarData = [
     {
         title: "Exam Results",
         icon: <BarChartIcon />,
-        link: "/exam-results"
+        link: "/student-dashboard"
     },
     {
         title: "Notices",
