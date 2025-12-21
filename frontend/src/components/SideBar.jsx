@@ -2,10 +2,11 @@ import React from 'react'
 import './SideBar.css'
 import { SideBarData } from './SideBarData.jsx'
 import LogoutIcon from '@mui/icons-material/Logout';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 function SideBar() {
   const location = useLocation();
+  const navigate = useNavigate();
 
   return (
     <ul>
@@ -13,7 +14,7 @@ function SideBar() {
             <div className="side-bar-items">
                 {SideBarData.map((val, key) => {
                 return <li key={key} className='row'
-                id={location.pathname == val.link ? "active" : ""} onClick={() => window.location.pathname = val.link}>
+                id={location.pathname == val.link ? "active" : ""} onClick={() => navigate(val.link)}>
                     <div id="icon">
                         {val.icon}
                     </div>

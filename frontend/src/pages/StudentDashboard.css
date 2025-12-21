@@ -1,7 +1,4 @@
-.studentDashboard {
-  padding:  20px 30px;
-  margin-top: 20px;
-}
+@import url("./Styles.css");
 
 .inputArea {
   margin-top: 50px;

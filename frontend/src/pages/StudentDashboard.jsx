@@ -7,7 +7,7 @@ function StudentDashboard() {
 
   return (
     <>
-      <div className="studentDashboard">
+      <div className="contentArea">
         <div className="heading">
           <h1>Exam Results</h1>
         </div>
