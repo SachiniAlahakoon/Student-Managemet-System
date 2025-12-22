@@ -2,7 +2,6 @@ import TopBar from "./components/TopBar.jsx";
 import SideBar from "./components/SideBar.jsx";
 import StudentDashboard from "./pages/StudentDashboard.jsx";
 import Notices from "./pages/Notices.jsx";
-// import AdminDashboard from './pages/AdminDashboard.jsx';
 import Bottom from "./components/Bottom.jsx";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
@@ -20,7 +19,6 @@ function App() {
         <Routes>
           <Route path="/student-dashboard" element={<StudentDashboard />} />
           <Route path="/notices" element={<Notices />} />
-          {/* <Route path="/admin-dashboard" element={<AdminDashboard />}/> */}
         </Routes>
       </main>
       <div>
