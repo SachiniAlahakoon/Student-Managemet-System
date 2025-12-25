@@ -1,5 +1,5 @@
 
-import "./Styles/Bottom.css";
+import "./styles/Bottom.css";
 
 function Bottom() {
   return (

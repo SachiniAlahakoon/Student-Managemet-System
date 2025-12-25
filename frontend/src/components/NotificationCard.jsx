@@ -1,5 +1,5 @@
 
-import "./Styles/NotificationCard.css";
+import "./styles/NotificationCard.css";
 
 function NotificationCard() {
   return (

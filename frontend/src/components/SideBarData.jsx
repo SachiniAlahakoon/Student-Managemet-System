@@ -7,7 +7,7 @@ export const SideBarData = [
     {
         title: "Profile",
         icon: <AccountCircleIcon />,
-        link: "/student-info"
+        link: "/Profile"
     },
     {
         title: "Exam Results",

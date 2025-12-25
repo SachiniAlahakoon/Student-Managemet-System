@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
-import './Styles/TopBar.css';
-import logo from '../assets/images/logo.webp'
+import './styles/TopBar.css';
+import logo from '../assets/images/Swarnamali GCK Logo.png'
 import userIcon from '../assets/images/user.png'
 import settingsIcon from '../assets/images/settings.png'
 import sortDownLogo from '../assets/images/sort-down.png'

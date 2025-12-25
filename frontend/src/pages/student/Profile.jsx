@@ -6,20 +6,14 @@ import SchoolIcon from "@mui/icons-material/School";
 import BloodtypeIcon from "@mui/icons-material/Bloodtype";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import PhoneIcon from "@mui/icons-material/Phone";
-import userIcon from '../assets/images/user.png'
-import "./StudentInfo.css";
-import { Link } from "react-router-dom";
+import "./styles/Profile.css";
 
-function StudentInfo() {
+function Profile() {
   return (
-    <div className="student-info-container">
+    <div className="contentArea">
       {/* Header Section */}
-      <header className="profile-header">
-        <h1 className="main-title">STUDENT PROFILE</h1>
-        <div className="search-box">
-          <input type="text" placeholder="ENTER STUDENT REG. NO" className="search-input" />
-          <button className="search-btn">ENTER</button>
-        </div>
+      <header className="heading">
+          <h1>Student Profile</h1>
       </header>
 
       {/* General Information Card */}
@@ -28,34 +22,46 @@ function StudentInfo() {
         <div className="general-content">
           <div className="avatar-wrapper">
             <div className="avatar-circle">
-             <img 
-          /* Replace this URL with {studentAvatar} if using a local file */
-          src="https://api.dicebear.com/7.x/avataaars/svg?seed=Annie&clothingColor=3d5afe&hairColor=4a312c&skinColor=edb98a" 
-          alt="Student" 
-          className="avatar-img"
-        />
+              <img
+                /* Replace this URL with {studentAvatar} if using a local file */
+                src="https://api.dicebear.com/7.x/avataaars/svg?seed=Annie&clothingColor=3d5afe&hairColor=4a312c&skinColor=edb98a"
+                alt="Student"
+                className="avatar-img"
+              />
             </div>
           </div>
-          
+
           <div className="details-list">
             <div className="detail-item">
-              <span className="detail-label"><PersonIcon className="icon" /> NAME</span>
+              <span className="detail-label">
+                <PersonIcon className="icon" /> NAME
+              </span>
               <span className="detail-value">N.M. Perera</span>
             </div>
             <div className="detail-item">
-              <span className="detail-label"><LocationOnIcon className="icon" /> ADDRESS</span>
-              <span className="detail-value address">###########, ###########</span>
+              <span className="detail-label">
+                <LocationOnIcon className="icon" /> ADDRESS
+              </span>
+              <span className="detail-value address">
+                ###########, ###########
+              </span>
             </div>
             <div className="detail-item">
-              <span className="detail-label"><BadgeIcon className="icon" /> REGISTRATION NUMBER</span>
+              <span className="detail-label">
+                <BadgeIcon className="icon" /> REGISTRATION NUMBER
+              </span>
               <span className="detail-value">9863582</span>
             </div>
             <div className="detail-item">
-              <span className="detail-label"><CalendarMonthIcon className="icon" /> BIRTHDAY</span>
+              <span className="detail-label">
+                <CalendarMonthIcon className="icon" /> BIRTHDAY
+              </span>
               <span className="detail-value">2020.04.01</span>
             </div>
             <div className="detail-item">
-              <span className="detail-label"><SchoolIcon className="icon" /> ADMISSION DATE</span>
+              <span className="detail-label">
+                <SchoolIcon className="icon" /> ADMISSION DATE
+              </span>
               <span className="detail-value">2020.04.01</span>
             </div>
           </div>
@@ -67,23 +73,33 @@ function StudentInfo() {
         <h2 className="section-title">EMERGENCY INFORMATION</h2>
         <div className="emergency-content">
           <div className="detail-item">
-            <span className="detail-label"><BloodtypeIcon className="icon" /> BLOOD TYPE</span>
+            <span className="detail-label">
+              <BloodtypeIcon className="icon" /> BLOOD TYPE
+            </span>
             <span className="detail-value">O+</span>
           </div>
           <div className="detail-item">
-            <span className="detail-label"><FavoriteIcon className="icon" /> SPECIAL HEALTH CONDITIONS</span>
+            <span className="detail-label">
+              <FavoriteIcon className="icon" /> SPECIAL HEALTH CONDITIONS
+            </span>
             <span className="detail-value">None</span>
           </div>
           <div className="detail-item contact-section">
-            <span className="detail-label"><PhoneIcon className="icon" /> EMERGENCY CONTACTS</span>
+            <span className="detail-label">
+              <PhoneIcon className="icon" /> EMERGENCY CONTACTS
+            </span>
             <div className="contacts-grid">
               <div className="contact-row">
                 <span className="contact-phone">0987654321</span>
-                <span className="contact-name">Mrs. Perera <small>(Mother)</small></span>
+                <span className="contact-name">
+                  Mrs. Perera <small>(Mother)</small>
+                </span>
               </div>
               <div className="contact-row">
                 <span className="contact-phone">0123456789</span>
-                <span className="contact-name">Mr. Perera <small>(Father)</small></span>
+                <span className="contact-name">
+                  Mr. Perera <small>(Father)</small>
+                </span>
               </div>
             </div>
           </div>
@@ -93,4 +109,4 @@ function StudentInfo() {
   );
 }
 
-export default StudentInfo;
+export default Profile;
