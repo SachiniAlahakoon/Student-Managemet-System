@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./styles/NotificationCard.css";
 
@@ -23,4 +24,5 @@ function NotificationCard() {
   );
 }
 
+export default NotificationCard;
 export default NotificationCard;

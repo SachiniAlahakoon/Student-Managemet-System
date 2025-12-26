@@ -1,3 +1,4 @@
+import Profile from "./pages/student/Profile.jsx"
 import ExamResults from "./pages/student/ExamResults.jsx";
 import Notices from "./pages/student/Notices.jsx";
 import "./App.css";
@@ -8,6 +9,9 @@ function App() {
   return (
     <Routes>
       <Route path="/student/*" element={<StudentFrame />}>
+        <Route path="profile" element={<Profile />} />
+        
+        </Route>
         <Route path="exam-results" element={<ExamResults />} />
         <Route path="notices" element={<Notices />} />
       </Route>

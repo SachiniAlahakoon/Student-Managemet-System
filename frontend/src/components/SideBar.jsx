@@ -1,3 +1,4 @@
+
 import React from 'react'
 import './styles/SideBar.css'
 import { SideBarData } from './SideBarData.jsx'
@@ -39,4 +40,5 @@ function SideBar() {
   )
 }
 
+export default SideBar;
 export default SideBar
