@@ -22,10 +22,8 @@ export default function Login() {
 
       const data = res.data;
 
-      // ✅ Save JWT token
       localStorage.setItem("token", data.token);
 
-      // ✅ ROLE BASED REDIRECT
       const role = data.user.role;
 
       if (role === "admin") {
