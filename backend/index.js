@@ -10,7 +10,8 @@ app.use(express.json());
 app.get('/', (req, res) => res.send('Student Management Backend running'));
 
 // routes
-const authRoutes = require('./routes/auth');
+const authRoutes = require('./routes/auth.routes');
+
 app.use('/api/auth', authRoutes);
 
 const PORT = process.env.PORT || 5000;
